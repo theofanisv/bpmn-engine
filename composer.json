@@ -1,0 +1,30 @@
+{
+    "name": "theograms/bpmn-manager",
+    "description": "Provide BPMN diagrams and get the course of evaluation in a step-by-step mode.",
+    "type": "library",
+    "license": "CC BY-NC-SA 4.0",
+    "authors": [
+        {
+            "name": "Theofanis Vardatsikos",
+            "email": "vardtheo@gmail.com",
+            "homepage": "https://www.linkedin.com/in/theofanis-vardatsikos"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "laravel/framework": "^9.0|^10.0",
+        "ext-xml": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Theograms\\BpmnManager\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Theograms\\BpmnManager\\BpmnManagerServiceProvider"
+            ]
+        }
+    }
+}
